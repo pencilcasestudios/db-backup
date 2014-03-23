@@ -2,7 +2,7 @@ if ARGV[0] && ARGV[1] && ARGV[2] && ARGV[3]
 	username = ARGV[0]
 	database_name = ARGV[1]
 	password = ARGV[2]
-        s3_bucket_name = ARGV[3]
+	s3_bucket_name = ARGV[3]
 
 	dump_filename = Time.now.strftime("#{database_name.downcase}-%Y%m-%H.sql")
 
