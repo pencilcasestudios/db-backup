@@ -6,7 +6,7 @@ if ARGV[0] && ARGV[1] && ARGV[2] && ARGV[3]
 
 	dump_filename = Time.now.strftime("#{database_name.downcase}-%Y%m-%H.sql")
 
-	backup_file_path = "~/Projects/Backups/#{database_name}"
+	backup_file_path = "~/Projects/Backups/DB/#{database_name}"
 
 	`mkdir -p #{backup_file_path}`
 	`mysqldump --verbose -u #{username} -p#{password} #{database_name} > #{backup_file_path}/#{dump_filename}`
